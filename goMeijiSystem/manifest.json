@@ -1,0 +1,16 @@
+{
+    "name": "Go! Meiji System",
+    "version": "0.1",
+    "manifest_version": 2,
+    "description": "ctrl+mで一発でOh-o!meijiSystemにログインします。付属のgomeiji.jsのコードを書き換えてからご使用ください。このプログラムによる損失・事故等は一切責任を負いません。自己責任の下にご使用ください。",
+    "permissions": ["tabs", "http://*/*","https://*/*"],
+    "content_scripts": [{
+        "matches" : ["http://*/*","https://*/*"],
+        "js" : ["jquery-2.1.1.min.js","gomeiji.js"]
+        }],
+
+    "browser_action": {
+        "default_icon": "mlogo.png",
+        "default_title": "Go Meiji"
+    }
+}
